@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="added static files">
-      <change afterPath="$PROJECT_DIR$/tools/my_dict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/user.py" afterDir="false" />
+    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="created new class InMemoryUsersRepo">
+      <change afterPath="$PROJECT_DIR$/tools/misc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616231351914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created new class my_dict">
+      <created>1616232459412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616232459412</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created new class InMemoryUsersRepo">
+      <created>1616232951782</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616232951782</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -122,6 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added static files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added static files" />
+    <MESSAGE value="created new class my_dict" />
+    <MESSAGE value="created new class InMemoryUsersRepo" />
+    <option name="LAST_COMMIT_MESSAGE" value="created new class InMemoryUsersRepo" />
   </component>
 </project>
