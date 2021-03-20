@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="created new class InMemoryUsersRepo">
-      <change afterPath="$PROJECT_DIR$/tools/misc.py" afterDir="false" />
+    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="make_response function">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/misc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/repo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.my_dict">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AlReddit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,8 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.my_dict" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.my_dict" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616232951782</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="make_response function">
+      <created>1616234240631</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616234240631</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -136,6 +144,7 @@
     <MESSAGE value="added static files" />
     <MESSAGE value="created new class my_dict" />
     <MESSAGE value="created new class InMemoryUsersRepo" />
-    <option name="LAST_COMMIT_MESSAGE" value="created new class InMemoryUsersRepo" />
+    <MESSAGE value="make_response function" />
+    <option name="LAST_COMMIT_MESSAGE" value="make_response function" />
   </component>
 </project>
