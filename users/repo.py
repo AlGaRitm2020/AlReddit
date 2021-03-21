@@ -7,7 +7,7 @@ class InMemoryUsersRepo:
         self.by_id = {}
 
     def get_by_name(self, name):
-        for _, value in self.by_id:
+        for _, value in self.by_id.items():
             if value.name == name:
                 return value
         return None
@@ -15,6 +15,7 @@ class InMemoryUsersRepo:
     def request_create(self, username, password):
         found = self.get_by_name(username)
         if found is not None:
+
             return None  # user with this name already created
         new_user = User(id=self.next_id, username=username, password=password)
         self.by_id[new_user.id] = new_user

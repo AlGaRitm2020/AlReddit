@@ -27,7 +27,9 @@ def user_register():
         return make_resp(jsonify({'message': "Empty request"}), 400)
     elif not check_keys(in_json, ('username', "password")):
         return make_resp((jsonify({'message': "Bad request"})), 400)
+
     created_user = app.user_repo.request_create(**in_json)
+
     if created_user is None:
         return make_resp(jsonify({'message': 'Duplication user'}), 400)
     return create_jwt_generate_response(created_user)
