@@ -55,7 +55,7 @@ def user_login():
     return create_jwt_generate_response(user)
 
 
-@app.route("/api/posts", methods=["GET"])
+@app.route("/api/posts/", methods=["GET"])
 def get_all_posts():
     return make_resp(jsonify(app.posts_repo.get_all()), 200)
 
@@ -73,6 +73,12 @@ def add_post():
     post.author = get_jwt_identity()
     post = app.posts_repo.request_create(post)
     return make_resp(jsonify(post), 200)
+
+
+@app.route("/api/post/<int:post_id>", methods=['GET'])
+def get_post_by_id(post_id):
+    print(post_id)
+    return make_resp(jsonify(app.posts_repo.get_by_id(post_id)), 200)
 
 
 if __name__ == '__main__':

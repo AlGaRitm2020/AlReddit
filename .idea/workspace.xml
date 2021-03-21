@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="authorization">
-      <change afterPath="$PROJECT_DIR$/posts/post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/posts/repo.py" afterDir="false" />
+    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="post query for posts">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/repo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.32ebaf54.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.32ebaf54.chunk.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616295166850</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="post query for posts">
+      <created>1616328256189</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616328256189</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -194,7 +199,8 @@
     <MESSAGE value="registration( not working)" />
     <MESSAGE value="registration" />
     <MESSAGE value="authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="authorization" />
+    <MESSAGE value="post query for posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="post query for posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
