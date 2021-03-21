@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="registration">
+    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="authorization">
+      <change afterPath="$PROJECT_DIR$/posts/post.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/posts/repo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/repo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.32ebaf54.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.32ebaf54.chunk.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616293842755</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="authorization">
+      <created>1616295166850</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616295166850</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -183,7 +193,8 @@
     <MESSAGE value="make_response function" />
     <MESSAGE value="registration( not working)" />
     <MESSAGE value="registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="registration" />
+    <MESSAGE value="authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="authorization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -192,11 +203,6 @@
           <url>file://$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_jwt_simple/jwt_manager.py</url>
           <line>176</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
