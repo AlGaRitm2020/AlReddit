@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="show all posts">
+    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="show one post">
+      <change afterPath="$PROJECT_DIR$/tools/my_json_encoder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/posts/repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/repo.py" afterDir="false" />
     </list>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616329287293</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="show one post">
+      <created>1616377260411</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616377260411</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -229,7 +237,8 @@
     <MESSAGE value="authorization" />
     <MESSAGE value="post query for posts" />
     <MESSAGE value="show all posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="show all posts" />
+    <MESSAGE value="show one post" />
+    <option name="LAST_COMMIT_MESSAGE" value="show one post" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,6 +247,11 @@
           <url>file://$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_jwt_simple/jwt_manager.py</url>
           <line>176</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -6,9 +6,12 @@ from flask_jwt_simple import JWTManager, jwt_required, get_jwt_identity
 from posts.post import Post
 from posts.repo import InMemoryPostsRepo
 from tools.misc import make_resp, check_keys, create_jwt_generate_response
+from tools.my_json_encoder import MyJSONEncoder
 from users.repo import InMemoryUsersRepo
+from users.user import User
 
 app = Flask(__name__)
+app.json_encoder = MyJSONEncoder
 app.user_repo = InMemoryUsersRepo()
 app.post_repo = InMemoryPostsRepo()
 app.config["JWT_SECRET_KEY"] = 'super-secret-str'
@@ -18,8 +21,6 @@ app.config["JWT_HEADER_NAME"] = 'authorization'
 app.jwt = JWTManager(app)
 
 app.user_repo.request_create('user', '12345678')
-
-
 
 
 @app.route("/")
@@ -72,7 +73,7 @@ def add_post():
         return make_resp((jsonify({'message': "Bad request"})), 400)
 
     post = Post(**in_json)
-    post.author = get_jwt_identity()
+    post.author = User(**get_jwt_identity())
     post = app.post_repo.request_create(post)
     return make_resp(jsonify(post), 200)
 
@@ -80,6 +81,16 @@ def add_post():
 @app.route("/a/<category>/api/post/<int:post_id>", methods=['GET'])
 def get_post_by_id(category, post_id):
     return make_resp(jsonify(app.post_repo.get_by_id(post_id)), 200)
+
+
+@app.route('/a/<category>/api/post/<int:post_id>', methods=["DELETE"])
+@jwt_required
+def delete_post_by_id(post_id, category):
+    result = app.post_repo.request_delete(post_id, User(**get_jwt_identity()))
+    if result is not None:
+        return make_resp(jsonify({'message': result}), 400)
+    else:
+        return make_resp(jsonify({'message': 'success'}), 200)
 
 
 if __name__ == '__main__':

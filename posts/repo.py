@@ -10,8 +10,7 @@ class InMemoryPostsRepo:
         return tuple(self.by_id.values())
 
     def get_by_id(self, id):
-        print(id)
-        return self.by_id[id]
+        return self.by_id.get(id, None)
 
     def request_create(self, post):
         post.id = self.next_id
@@ -20,5 +19,11 @@ class InMemoryPostsRepo:
         self.next_id += 1
         return post
 
-
-
+    def request_delete(self, id, user):
+        post = self.get_by_id(id)
+        if not post:
+            return f'Post does not author of this post id: {id}'
+        if post.author.id != user.id:
+            return f'You are not author of this post is: {id}'
+        del self.by_id[id]
+        return None
