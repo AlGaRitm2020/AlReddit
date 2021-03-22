@@ -93,5 +93,10 @@ def delete_post_by_id(post_id, category):
         return make_resp(jsonify({'message': 'success'}), 200)
 
 
+@app.route('/u/api/user/<username>', methods=['GET'])
+def get_post_by_user_name(username):
+    return make_resp(jsonify(app.post_repo.get_by_username(username)), 200)
+
+
 if __name__ == '__main__':
     app.run()

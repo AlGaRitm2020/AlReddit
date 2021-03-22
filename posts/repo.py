@@ -1,4 +1,5 @@
 from datetime import datetime
+from pprint import pprint
 
 
 class InMemoryPostsRepo:
@@ -11,6 +12,16 @@ class InMemoryPostsRepo:
 
     def get_by_id(self, id):
         return self.by_id.get(id, None)
+
+    def get_by_username(self, username):
+        result = []
+
+        for post in self.by_id.values():
+            if post.author.username == username:
+                pprint(post)
+                result.append(post)
+
+        return tuple(result)
 
     def request_create(self, post):
         post.id = self.next_id
