@@ -98,5 +98,10 @@ def get_post_by_user_name(username):
     return make_resp(jsonify(app.post_repo.get_by_username(username)), 200)
 
 
+@app.route('/a/api/posts/<category>', methods=['GET'])
+def get_post_by_category(category):
+    return make_resp(jsonify(app.post_repo.get_by_category(category)), 200)
+
+
 if __name__ == '__main__':
     app.run()

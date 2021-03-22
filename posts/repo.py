@@ -15,12 +15,16 @@ class InMemoryPostsRepo:
 
     def get_by_username(self, username):
         result = []
-
         for post in self.by_id.values():
             if post.author.username == username:
-                pprint(post)
                 result.append(post)
+        return tuple(result)
 
+    def get_by_category(self, category):
+        result = []
+        for post in self.by_id.values():
+            if post.category == category:
+                result.append(post)
         return tuple(result)
 
     def request_create(self, post):

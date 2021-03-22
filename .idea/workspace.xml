@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="delete post">
+    <list default="true" id="af1b9767-eaaf-4ca1-a765-151e813e7517" name="Default Changelist" comment="filter posts by users">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/posts/repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/repo.py" afterDir="false" />
     </list>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616379720020</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="filter posts by users">
+      <created>1616381878176</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616381878176</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -245,7 +252,8 @@
     <MESSAGE value="show all posts" />
     <MESSAGE value="show one post" />
     <MESSAGE value="delete post" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete post" />
+    <MESSAGE value="filter posts by users" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter posts by users" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -254,11 +262,6 @@
           <url>file://$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_jwt_simple/jwt_manager.py</url>
           <line>176</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
