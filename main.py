@@ -10,7 +10,7 @@ from users.repo import InMemoryUsersRepo
 
 app = Flask(__name__)
 app.user_repo = InMemoryUsersRepo()
-app.posts_repo = InMemoryPostsRepo()
+app.post_repo = InMemoryPostsRepo()
 app.config["JWT_SECRET_KEY"] = 'super-secret-str'
 app.config["JWT_EXPIRES"] = timedelta(hours=24)
 app.config["JWT_IDENTITY_CLAIM"] = 'user'
@@ -18,6 +18,8 @@ app.config["JWT_HEADER_NAME"] = 'authorization'
 app.jwt = JWTManager(app)
 
 app.user_repo.request_create('user', '12345678')
+
+
 
 
 @app.route("/")
@@ -57,7 +59,7 @@ def user_login():
 
 @app.route("/api/posts/", methods=["GET"])
 def get_all_posts():
-    return make_resp(jsonify(app.posts_repo.get_all()), 200)
+    return make_resp(jsonify(app.post_repo.get_all()), 200)
 
 
 @app.route('/api/posts', methods=['POST'])
@@ -71,14 +73,13 @@ def add_post():
 
     post = Post(**in_json)
     post.author = get_jwt_identity()
-    post = app.posts_repo.request_create(post)
+    post = app.post_repo.request_create(post)
     return make_resp(jsonify(post), 200)
 
 
-@app.route("/api/post/<int:post_id>", methods=['GET'])
-def get_post_by_id(post_id):
-    print(post_id)
-    return make_resp(jsonify(app.posts_repo.get_by_id(post_id)), 200)
+@app.route("/a/<category>/api/post/<int:post_id>", methods=['GET'])
+def get_post_by_id(category, post_id):
+    return make_resp(jsonify(app.post_repo.get_by_id(post_id)), 200)
 
 
 if __name__ == '__main__':
